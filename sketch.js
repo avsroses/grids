@@ -52,10 +52,10 @@ function draw() {
   noStroke();
   for(let y = 0; y < height; y += CELLSIZE) {
     for(let x = 0; x < width; x += CELLSIZE) {
-      fill(random(255));
+      fill(random(COLOURS));
       //draw circle in middle of cell
       arc(x + CELLSIZE/2, y + CELLSIZE/2, CELLSIZE, CELLSIZE, 0, random(ARCVALUES));
-      fill(random(255));
+      fill(random(COLOURS));
       arc(x + CELLSIZE/2, y + CELLSIZE/2, CELLSIZE/2, CELLSIZE/2, 0, random(ARCVALUES));
     }
   } 
